@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link href="//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A" rel="stylesheet"
+      type="text/css" />
+   <link rel="stylesheet" href="./style/style.css">
+   <title>ANVIO</title>
+</head>
+
+<body>
+
+   <header>
+      <div class="header-logo">
+         <a href="./index.html">
+            <img src="./img/first-section/logo.svg" alt="Logo" class="header-logo-item" />
+         </a>
+      </div>
+      <nav class="header-nav">
+         <ul>
+            <li class="header-nav_list-item">
+               <div class="header-nav_list-item_link">
+                  развлечения
+               </div>
+               <div class="dropdown-fun">
+                  <a href="#arena">
+                     <img src="./img/dpordown/arena.png" alt="Arena" />
+                  </a>
+                  <a href="#emotions">
+                     <img src="./img/dpordown/cube.png" alt="Cube" />
+                  </a>
+                  <a href="#arena">
+                     <img src="./img/dpordown/attracion.png" alt="Attracion" />
+                  </a>
+                  <a href="#emotions">
+                     <img src="./img/dpordown/vr.png" alt="VR" />
+                  </a>
+                  <a href="#arena">
+                     <img src="./img/dpordown/pvp.png" alt="PvP" />
+                  </a>
+                  <a href="#emotions">
+                     <img src="./img/dpordown/ticket.png" alt="Tickets" />
+                  </a>
+               </div>
+            </li>
+            <li class="header-nav_list-item">
+               <a href="#emotions">
+                  эмоции
+               </a>
+            </li>
+            <li class="header-nav_list-item">
+               <div class="header-nav_list-item_link">
+                  мероприятия
+               </div>
+               <div class="dropdown-events">
+                  <a href="#emotions">
+                     <img src="./img/dpordown/balls.png" alt="Ballons">
+                     <p>детские дни рождения</p>
+                  </a>
+
+                  <a href="#arena">
+                     <img src="./img/dpordown/glasses.png" alt="Glasses">
+                     <p>взрослые дни рождения</p>
+                  </a>
+
+                  <a href="#emotions">
+                     <img src="./img/dpordown/party2.png" alt="Party">
+                     <p>копоративы</p>
+                  </a>
+
+                  <a href="#arena">
+                     <img src="./img/dpordown/star.png" alt="Star">
+                     <p>нестандартные мероприятия</p>
+                  </a>
+               </div>
+            </li>
+            <li class="header-nav_list-item">
+               <a href="#hidden-anchor">
+                  отзывы
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <button class="header-btn">
+         Купить билет
+      </button>
+      <div class="header-contact">
+         <a href="tel:+380672963030">+38 (067) 296-30-30</a>
+         <ul>
+            <li class="header-contact_list-item">
+               <div href="#" class="header-nav_list-item_link">
+                  Киев
+               </div>
+               <div class="dropdown-city">
+                  <div class="country">
+                     <h2>Страна</h2>
+                     <div>
+                        <button>кыргызская республика</button>
+                        <button>азербайджан</button>
+                        <button disabled>украина</button>
+                        <button>сша</button>
+                        <button>бельгия</button>
+                        <button>саудовская аравия</button>
+                        <button>франция</button>
+                        <button>египет</button>
+                     </div>
+                  </div>
+                  <div class="city">
+                     <h2>Город</h2>
+                     <div>
+                        <button disabled>киев</button>
+                        <button>днепр (скоро)</button>
+                        <button>львов (скоро)</button>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="header-contact_list-item">
+               <a href="#">войти</a>
+            </li>
+            <li class="header-contact_list-item">
+               <div class="header-nav_list-item_link">
+                  ru
+               </div>
+               <div class="dropdown-lang ss">
+                  <div>
+                     <button disabled>
+                        руский
+                     </button>
+                     <button>
+                        english
+                     </button>
+                     <button>
+                        Українська
+                     </button>
+                  </div>
+               </div>
+            </li>
+         </ul>
+      </div>
+
+      <!-- // mobile header-->
+      <div class="header-logo-mobile">
+         <a href="./index.html">
+            <img src="./img/first-section/logo.svg" alt="Logo" class="header-logo-item" />
+         </a>
+      </div>
+      <div class="header-mobile">
+         <div class="menu-button" id="0">
+            <img src="./img/icons/mobile/geo.svg" alt="Geolocation" class="header-modile-icon ">
+         </div>
+         <div class="menu-button" id="1">
+            <img src="./img/icons/mobile/phone.svg" alt="Phone" class="header-modile-icon">
+         </div>
+         <div class="header-mobile_menu menu-button" id="2">
+            <img src="./img/icons/mobile/menu.svg" alt="Geolocation" class="header-modile-icon">
+         </div>
+         <div class="header-mobile_cross menu-button" id="3" style="display: none;">
+            <img src="./img/icons/mobile/cross.svg" alt="Geolocation" class="header-modile-icon">
+         </div>
+      </div>
+      <!-- // modal menu window -->
+      <div class="mobile-menu-modal-geo">
+         <div class="mobile-menu-modal-geo_wrapper">
+            <div class="modal-geo_info">
+               <p>Киев, ул. Вадима Гетьмана 6 , ТРЦ Cosmo Multimall, Блок A, 2-ой этаж</p>
+               <div class="first-section-circle-info">
+                  <img src="./img/icons/metro.png" alt="Icon metro">
+                  <div>Шулявська — 400м</div>
+               </div>
+               <div class="active-gray">
+                  время работы
+               </div>
+               <div class="time-marker">
+                  Ежедневно с 10:00 до 22:00
+               </div>
+            </div>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.534836752118!2d30.43917141589609!3d50.449764495295085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc24d030cf41%3A0xfbed7f422ec96831!2sCosmo%20Multimall!5e0!3m2!1sru!2sus!4v1660299888966!5m2!1sru!2sus"
+               max-width="350" height="420"
+               style="border:0; border-radius: 30px; margin-top: 30px; margin-bottom: 30px;" allowfullscreen=""
+               loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="modal-geo_buttons">
+               <div class="active-gray">
+                  как добратся
+               </div>
+               <button class="modal_btn">
+                  на метро
+               </button>
+               <button class="modal_btn">
+                  на автомобиле
+               </button>
+               <button class="modal_btn">
+                  google карты
+               </button>
+            </div>
+
+         </div>
+
+      </div>
+      <div class="mobile-menu-modal-contact">
+         <div class="mobile-menu-modal-contact_wrapper">
+            <div class="mobile-menu-modal_contacts">
+               <a href="mailto:info@anviovr.com">info@anviovr.com</a>
+               <a href="tel:+380672963030">+38 (067) 296-30-30</a>
+               <div class="contacts_social">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/telegram.png" alt="Telegram" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/whatsapp.png" alt="Whatsapp" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/fb.png" alt="Facebook" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/tiktok.png" alt="TikTok" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/youtube.png" alt="Youtube" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mobile-menu-modal-burger">
+         <div class="mobile-menu-modal-burger_wrapper">
+            <div class="mobile-menu-modal-burger_header">
+               <div class="details-city">
+                  <a href="#" class="header-nav_list-item_link header-link">Киев</a>
+               </div>
+               <div class="details-language">
+                  <a href="#" class="header-nav_list-item_link header-link">ua</a>
+               </div>
+            </div>
+            <div class="datails-content datails-content-location">
+               <div class="modal-burger-location">
+                  <div class="country">
+                     <h2>Страна</h2>
+                     <button>Кыргызская республика</button>
+                     <button>Фзербайджан</button>
+                     <button disabled>Украина</button>
+                     <button>Сша</button>
+                     <button>Бельгия</button>
+                     <button>Саудовская аравия</button>
+                     <button>Франция</button>
+                     <button>Египет</button>
+                  </div>
+                  <div class="city">
+                     <h2>Город</h2>
+                     <button disabled>Киев</button>
+                     <button>Днепр (скоро)</button>
+                     <button>Львов (скоро)</button>
+                  </div>
+               </div>
+            </div>
+            <div class="datails-content datails-content-language">
+               <div class="burger_language-wrapper">
+                  <button>english</button>
+                  <button>руский</button>
+                  <button disabled>Українська</button>
+               </div>
+            </div>
+            <div class="buttons-group-burger">
+               <button class="modal_btn btn-red">купить билет</button>
+               <button class="modal_btn">заказать праздник</button>
+            </div>
+            <details class="details-entertainment">
+               <summary>
+                  развлечения
+               </summary>
+               <div class="details-links">
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/arena.png" alt="Arena" />
+                  </a>
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/cube.png" alt="Cube" />
+                  </a>
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/attracion.png" alt="Attracion" />
+                  </a>
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/vr.png" alt="VR" />
+                  </a>
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/pvp.png" alt="PvP" />
+                  </a>
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/ticket.png" alt="Tickets" />
+                  </a>
+               </div>
+            </details>
+            <details class="details-party">
+               <summary>
+                  мероприятия
+               </summary>
+               <div class="details-links">
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/balls.png" alt="Ballons">
+                     <p>детские дни рождения</p>
+                  </a>
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/glasses.png" alt="Glasses">
+                     <p>взрослые дни рождения</p>
+                  </a>
+
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/party2.png" alt="Party">
+                     <p>копоративы</p>
+                  </a>
+
+                  <a href="#arena-mobile">
+                     <img src="./img/dpordown/star.png" alt="Star">
+                     <p>нестандартные мероприятия</p>
+                  </a>
+
+               </div>
+            </details>
+            <a href="#" class="mobile-menu-modal-burger-link">Сертификаты</a>
+            <a href="#" class="mobile-menu-modal-burger-link">Контакты</a>
+            <div class="mobile-menu-modal_contacts contacts_social_burger">
+               <a href="mailto:info@anviovr.com">info@anviovr.com</a>
+               <a href="tel:+380672963030">+38 (067) 296-30-30</a>
+               <div class="contacts_social ">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/telegram.png" alt="Telegram" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/whatsapp.png" alt="Whatsapp" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/fb.png" alt="Facebook" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/tiktok.png" alt="TikTok" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/youtube.png" alt="Youtube" />
+                  </a>
+               </div>
+
+            </div>
+            <div class="modal-burger-login">
+               <img src="./img/icons/mobile/login.svg" alt="Login">
+               <a href="#">войти</a>
+            </div>
+         </div>
+
+
+      </div>
+
+   </header>
+   <main>
+      <!-- // first section -->
+      <section class="first-section first-section-back">
+
+         <div class="first-section_left">
+            <div class="first-section_left_header">
+               <p>Мы находимся в Cosmo Multimall</p>
+               <div class="first-section-circle-info">
+                  <img src="./img/icons/metro.png" alt="Icon metro">
+                  <div>Шулявська — 400м</div>
+               </div>
+            </div>
+            <h1>VR-клуб «Anvio»</h1>
+            <p>парк цифровых развлечений для всей семьи</p>
+            <div class="first-section_left-wrapper">
+               <div class="first-section_left-info">
+                  <div>
+                     <img src="./img/icons/square.svg" alt="Square" />
+                     <div class="first-section_left-info-text">Площадь парка 2100 м²</div>
+                  </div>
+                  <div>
+                     <img src="./img/icons/team-game.svg" alt="Team game" />
+                     <div class="first-section_left-info-text">Командные игры</div>
+                  </div>
+                  <div>
+                     <img src="./img/icons/moving.svg" alt="Free moving" />
+                     <div class="first-section_left-info-text">Свобода передвижений</div>
+                  </div>
+               </div>
+               <img class="first-section_left_mobile-img" src="./img/first-section/Frame 1068.png" alt="Picture">
+            </div>
+            <div class="first-section_left-slider slider">
+               <div class="slider-info slide1">
+                  <p>скидка 50%</p>
+                  <p>на второй сеанс</p>
+                  <button class="slider-btn">Получить скидку</button>
+               </div>
+               <div class="slider-info slide2">
+                  <p>день рождения</p>
+                  <p>от 1490 ₴</p>
+                  <button class="slider-btn">Получить скидку</button>
+               </div>
+               <div class="slider-info slide3">
+                  <p>Командный бонус</p>
+                  <p>1000 ₴</p>
+                  <button class="slider-btn">Получить скидку</button>
+               </div>
+
+            </div>
+         </div>
+         <div class="first-section_right">
+            <div class="first-section_right-video">
+               <img src="./img/first-section/video-first-section.png" alt="video" />
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <div class="play">
+                     <div class="play-circle">
+                        <div class="play-triangle">
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <div class="first-section-circle">
+            <div class="cosmo-logo-wrapper">
+               <img src="./img/first-section/mask-group.png" alt="Logo" class="cosmo-logo">
+               <div class="cosmo-logo-cirle">
+                  <div class="cosmo-logo-title">Cosmo</div>
+                  <div class="cosmo-logo-name">Multimall</div>
+               </div>
+            </div>
+            <h2>В центре Киева</h2>
+            <div class="first-section-circle-info">
+               <img src="./img/icons/metro.png" alt="Icon metro">
+               <div>Шулявська — 400м</div>
+            </div>
+            <img src="./img/icons/tract.png" alt="Geolocation" class="circle-geo">
+         </div>
+      </section>
+      <!-- //second section -->
+      <section class="second-section" id="emotions">
+         <div class="second-section_left">
+            <div class="second-section_left-title">
+               Причины, по которым вы будете в восторге
+            </div>
+            <div class="second-section_left-info">
+               <div class="second-section_left-info-item">
+                  <img src="./img/second-section/second-gemapad.png" alt="gamepad">
+                  <div class="second-section_left-info-item-wrapper">
+                     <div class="second-section_left-info-item-title">
+                        Мы разрабатываем игры!
+                     </div>
+                     <p class="second-section_left-info-item-text">
+                        Игры создаю наши гейм дизайнеры, и нигде, кроме ANVIO, в них не сыграть. Поучаствуй в
+                        спецоперации по спасению города. Зомби и боссы ждут вас! (Игра City Z)
+                     </p>
+                  </div>
+               </div>
+               <div class="second-section_left-info-item">
+                  <img src="./img/second-section/second-place.png" alt="place">
+                  <div class="second-section_left-info-item-wrapper">
+                     <div class="second-section_left-info-item-title">
+                        100 м² локация свободного перемещения
+                     </div>
+                     <p class="second-section_left-info-item-text">
+                        Полное погружение в виртуальную реальность со свободой перемещения, через пару минут вы уже
+                        забываете, что вы в игре и погружаетесь в экшн.
+                     </p>
+                  </div>
+               </div>
+               <div class="second-section_left-info-item">
+                  <img src="./img/second-section/second-people.png" alt="gamepad">
+                  <div class="second-section_left-info-item-wrapper">
+                     <div class="second-section_left-info-item-title">
+                        Cвободное перемещение по игровой зоне без проводов
+                     </div>
+                     <p class="second-section_left-info-item-text">
+                        Не стоите на месте, а по-настоящему движетесь, как участник кино, стреляете в монстров и с
+                        криками убегаете от них.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="second-section_toght">
+            <img src="./img/second-section/second-plan.png" alt="">
+         </div>
+      </section>
+      <!-- // third section -->
+      <section class="third-section">
+         <div class="third-section-logo">
+            <img src="./img/third-section/logo-big.png" alt="Gig logo">
+         </div>
+         <div class="third-section-description">
+            <div class="third-section-description_left">
+               <div class="third-section-description_left-item">
+                  <div class="third-section-description_left-item-num">12</div>
+                  <div class="third-section-description_left-item-word">стран</div>
+               </div>
+               <div class="third-section-description_left-item">
+                  <div class="third-section-description_left-item-num">26</div>
+                  <div class="third-section-description_left-item-word">клубов</div>
+               </div>
+            </div>
+            <div class="third-section-description_right">
+               <div class="third-section-description_right-title">
+                  Международная сеть VR клубов
+               </div>
+               <p class="third-section-description_right-text">
+                  Мы открыли парк цифровых развлечений для всей семьи в самом центре Киева в Цетральном дестком
+                  магазине. На 2100 м² мы выстроили абсолютно новое игровое пространство, объединяюющее в себе VR-арены,
+                  стенды, игровые автоматы и аттракционы.
+               </p>
+               <p class="third-section-description_right-text">
+                  Anvio VR — это международная сеть клубов виртуальной реальности, расположенных по всему миру более чем
+                  в 26 странах: США, Канада, Франция, Израиль, Германия, Китай, Бразилия, Колумбия, Украина, Киргизстан.
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- // fourth section -->
+      <section class="fourth-section">
+         <div class="fourth-section-header">
+            <div class="fourth-section-header-title">
+               Наши развлечения
+            </div>
+            <div class="fourth-section-header-buttons" id="arena">
+               <button class="btn-fourth-section btn-fourth-section-active">арены</button>
+               <button class="btn-fourth-section hidden">атракционы</button>
+               <button class="btn-fourth-section hidden">стенды</button>
+               <button class="btn-fourth-section hidden">кубы</button>
+            </div>
+         </div>
+         <div class="fourth-section_content" >
+            <div id="arena-mobile" class="hidden-anchor-arena">
+            </div>
+            <div class="fourth-section_content-header">
+               <div class="fourth-section_content-header_left">
+                  <div class="fourth-section_content-header-title" >
+                     Арена
+                  </div>
+                  <div class="fourth-section_content-header-wrapper">
+                     <div class="fourth-section_content-header-icon">
+                        <img src="./img/fourth-section/gemapad.png" alt="Gemapad">
+                        <div>
+                           2-12
+                        </div>
+                     </div>
+                     <div class="fourth-section_content-header-icon">
+                        <img src="./img/fourth-section/clock.png" alt="Clock">
+                        <div>
+                           40 мин.
+                        </div>
+                     </div>
+                     <div class="fourth-section_content-header-icon">
+                        <img src="./img/fourth-section/money.png" alt="Money">
+                        <div>
+                           от 250 ₴
+                        </div>
+                     </div>
+                  </div>
+                  <div class="fourth-section_content-header-text" >
+                     В нашем парке можно устроить праздник, который не забудется ни имененниками, ни их гостями.
+                  </div>
+                  <div class="fourth-section_content-header-buttons">
+                     <button class="btn btn-red btn-price">
+                        Цены
+                     </button>
+                     <button class="btn">
+                        подробнее
+                     </button>
+                  </div>
+               </div>
+               <div class="fourth-section_content-header_right">
+                  <img src="./img/fourth-section/place.png" alt="place">
+                  <div class="text-1 text">
+                     На наших аренах могут играть одновременно до 10 человек
+                  </div>
+                  <div class="text-2 text">
+                     100 м²
+                  </div>
+                  <div class="text-3 text">
+                     Свободное перемещение
+                  </div>
+                  <div class="text-4 text">
+                     6 игр
+                  </div>
+               </div>
+            </div>
+            <div class="fourth-section_content-main">
+               <div class="hidden-anchor-video" id="hidden-anchor"></div>
+
+               <div class="fourth-section_content-main-first">
+                  <div class="fourth-section_content-main-first-item item-1 item">
+                     <div class="fourth-section_content-main-item_wrapper">
+                        <div class="fourth-section_content-main-item_wrapper-name">
+                           City Z
+                        </div>
+                        <div class="fourth-section_content-main-item_wrapper-info">
+                           <div>Шутер</div>
+                           <div>30 мин.</div>
+                           <div>1-4 чел.</div>
+                           <div>12+</div>
+                        </div>
+                        <div class="buttons-group">
+                           <button class="btn btn-red">
+                              Забронировать
+                           </button>
+                           <button class="btn">
+                              Подробнее
+                           </button>
+                        </div>
+                     </div>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="play">
+                           <div class="play-circle">
+                              <div class="play-triangle">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="fourth-section_content-main-first-item item-2 item">
+                     <div class="fourth-section_content-main-item_wrapper">
+                        <div class="fourth-section_content-main-item_wrapper-name">
+                           City Z: SURVIVORS
+                        </div>
+                        <div class="fourth-section_content-main-item_wrapper-info">
+                           <div>Шутер</div>
+                           <div>30 мин.</div>
+                           <div>1-4 чел.</div>
+                           <div>12+</div>
+                        </div>
+                        <div class="buttons-group">
+                           <button class="btn btn-red">
+                              Забронировать
+                           </button>
+                           <button class="btn">
+                              Подробнее
+                           </button>
+                        </div>
+                     </div>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="play">
+                           <div class="play-circle">
+                              <div class="play-triangle">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="fourth-section_content-main-first-item item-3 item">
+                     <div class="fourth-section_content-main-item_wrapper">
+                        <div class="fourth-section_content-main-item_wrapper-name">
+                           City Z: Antidote
+                        </div>
+                        <div class="fourth-section_content-main-item_wrapper-info">
+                           <div>Шутер</div>
+                           <div>30 мин.</div>
+                           <div>1-4 чел.</div>
+                           <div>12+</div>
+                        </div>
+                        <div class="buttons-group">
+                           <button class="btn btn-red">
+                              Забронировать
+                           </button>
+                           <button class="btn">
+                              Подробнее
+                           </button>
+                        </div>
+                     </div>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="play">
+                           <div class="play-circle">
+                              <div class="play-triangle">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="fourth-section_content-main-second item-4 item ">
+                  <div class="fourth-section_content-main-second-item  ">
+                     <div class="fourth-section_content-main-item_wrapper">
+                        <div class="fourth-section_content-main-item_wrapper-name">
+                           City Z: Antidote
+                        </div>
+                        <div class="fourth-section_content-main-item_wrapper-info">
+                           <div>Шутер</div>
+                           <div>30 мин.</div>
+                           <div>1-4 чел.</div>
+                           <div>12+</div>
+                        </div>
+                        <div class="buttons-group">
+                           <button class="btn btn-red">
+                              Забронировать
+                           </button>
+                           <button class="btn">
+                              Подробнее
+                           </button>
+                        </div>
+                     </div>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="play">
+                           <div class="play-circle">
+                              <div class="play-triangle">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="fourth-section_content-main-third">
+                  <div class="fourth-section_content-main-third-item item-5 item">
+                     <div class="fourth-section_content-main-item_wrapper">
+                        <div class="fourth-section_content-main-item_wrapper-name">
+                           Station Zarya
+                        </div>
+                        <div class="fourth-section_content-main-item_wrapper-info">
+                           <div>Фантастика</div>
+                           <div>30 мин.</div>
+                           <div>1-4 чел.</div>
+                           <div>12+</div>
+                        </div>
+                        <div class="buttons-group">
+                           <button class="btn btn-red">
+                              Забронировать
+                           </button>
+                           <button class="btn">
+                              Подробнее
+                           </button>
+                        </div>
+                     </div>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="play">
+                           <div class="play-circle">
+                              <div class="play-triangle">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="fourth-section_content-main-third-item item-6 item">
+                     <div class="fourth-section_content-main-item_wrapper">
+                        <div class="fourth-section_content-main-item_wrapper-name">
+                           Lost sanctuary
+                        </div>
+                        <div class="fourth-section_content-main-item_wrapper-info">
+                           <div>Квест</div>
+                           <div>30 мин.</div>
+                           <div>1-4 чел.</div>
+                           <div>12+</div>
+                        </div>
+                        <div class="buttons-group">
+                           <button class="btn btn-red">
+                              Забронировать
+                           </button>
+                           <button class="btn">
+                              Подробнее
+                           </button>
+                        </div>
+                     </div>
+                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <div class="play">
+                           <div class="play-circle">
+                              <div class="play-triangle">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fourth-section_modal">
+            <div class="fourth-section_modal-wrapper">
+               <div class="fourth-section_modal-wrapper-left">
+                  <div class="fourth-section_modal-wrapper-left-header">
+                     <div class="fourth-section_modal-wrapper-left-header-title">
+                        Арена
+                     </div>
+                     <div class="fourth-section_modal-wrapper-left-header-box">
+                        <div>5 000 ₴</div>
+                        <div>За команду до 6 чел.</div>
+                     </div>
+                  </div>
+                  <div class="fourth-section_modal-wrapper-left-content-icon">
+                     <div>
+                        <img src="./img/fourth-section/modal/modal-party.png" alt="Party">
+                        <div>1-6 чел.</div>
+                     </div>
+                     <div>
+                        <img src="./img/fourth-section/modal/modal-clock.png" alt="Clock">
+                        <div>30 мин.</div>
+                     </div>
+                     <div>
+                        <img src="./img/fourth-section/modal/modal-place.png" alt="Place">
+                        <div>100 м²</div>
+                     </div>
+                  </div>
+                  <ul>
+                     <li>Зона свободного передвижения во время игры</li>
+                     <li>Квесты, зомби, стрелялки</li>
+                     <li>6 разнообразных игр </li>
+                     <li>Современное оборудование без проводов</li>
+                  </ul>
+                  <div class="fourth-section_modal-wrapper-left-time">
+                     <div>Будни</div>
+                     <div class="fourth-section_modal-wrapper-left-time-price">
+                        <div>от 834 ₴</div>
+                        <div>за человека*</div>
+                     </div>
+                  </div>
+                  <div class="fourth-section_modal-wrapper-left-time">
+                     <div>Выходные</div>
+                     <div class="fourth-section_modal-wrapper-left-time-price">
+                        <div>от 1167 ₴</div>
+                        <div>за человека*</div>
+                     </div>
+                  </div>
+                  <p>* стоимость указана на полную команду 6 человек</p>
+                  <button class="btn">
+                     Расписание и цены
+                  </button>
+               </div>
+               <div class="fourth-section_modal-wrapper-right">
+                  <div class="fourth-section_modal-wrapper-right_item">
+                     <div class="fourth-section_modal-wrapper-right_item-title">
+                        <div>Куб</div>
+                        <div class="fourth-section_modal-wrapper-right_item-title-back">500 ₴</div>
+                     </div>
+                     <div class="fourth-section_modal-wrapper-left-content-icon">
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-party.png" alt="Party">
+                           <div>1-4 чел.</div>
+                        </div>
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-clock.png" alt="Clock">
+                           <div>15 мин.</div>
+                        </div>
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-place.png" alt="Place">
+                           <div>25 м²</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="fourth-section_modal-wrapper-right_item">
+                     <div class="fourth-section_modal-wrapper-right_item-title">
+                        <div>Аттракционы</div>
+                        <div class="fourth-section_modal-wrapper-right_item-title-back">500 ₴</div>
+                     </div>
+                     <div class="fourth-section_modal-wrapper-left-content-icon">
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-party.png" alt="Party">
+                           <div>1 чел.</div>
+                        </div>
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-clock.png" alt="Clock">
+                           <div>10 мин.</div>
+                        </div>
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-place.png" alt="Place">
+                           <div>25 м²</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="fourth-section_modal-wrapper-right_item">
+                     <div class="fourth-section_modal-wrapper-right_item-title">
+                        <div>Стенды</div>
+                        <div class="fourth-section_modal-wrapper-right_item-title-back">500 ₴</div>
+                     </div>
+                     <div class="fourth-section_modal-wrapper-left-content-icon">
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-party.png" alt="Party">
+                           <div>1 чел.</div>
+                        </div>
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-clock.png" alt="Clock">
+                           <div>30 мин.</div>
+                        </div>
+                        <div>
+                           <img src="./img/fourth-section/modal/modal-place.png" alt="Place">
+                           <div>25 м²</div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="wrapper-btn">
+                  <button class="btn-close">X</button>
+               </div>
+            </div>
+            
+         </div>
+         <div class="fourth-section_footer">
+            <button class="btn-fourth-section ">атракционы</button>
+            <button class="btn-fourth-section ">стенды</button>
+            <button class="btn-fourth-section ">кубы</button>
+         </div>
+      </section>
+   </main>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>

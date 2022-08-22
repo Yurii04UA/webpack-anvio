@@ -1,0 +1,76 @@
+/* CSS reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Euclid Circular A Fonts', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS reset */
+
+.oh {
+  overflow: hidden;
+}
+
+/* // buttons */
+.btn {
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid #CE2127;
+  background: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-red {
+  background: #CE2127;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #80808050;
+}
+
+.header-btn:hover,
+.btn-red:hover {
+  background: #911115;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
+

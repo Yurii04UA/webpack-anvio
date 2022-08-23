@@ -1,3 +1,7 @@
+import { closeAllDetails, closeAll } from "./functions.js";
+import '../style/style.css'
+console.log("test");
+
 const arrayModals = [
   document.querySelector(".mobile-menu-modal-geo"),
   document.querySelector(".mobile-menu-modal-contact"),
@@ -31,7 +35,6 @@ btnPrice.addEventListener("click", () => {
 btnClose.addEventListener("click", (e) => {
   modalWindowPriceBlur.classList.remove("fourth-sectio-show-modal");
   modalWindowPrice.classList.remove("fourth-sectio-show-modal");
-
 });
 
 // active circle of mobile menu
@@ -77,12 +80,7 @@ menuButtons.forEach((elem) => {
   });
 });
 
-// show city and lang menu
-const closeAllDetails = () => {
-  document.querySelectorAll("details[open]").forEach((el) => {
-    el.open = false;
-  });
-};
+// // show city and lang menu
 
 btnCity.addEventListener("click", () => {
   closeAllDetails();
@@ -114,24 +112,9 @@ document.querySelectorAll("details").forEach((el) => {
   el.addEventListener("toggle", onToggle);
 });
 
-const closeAll = () => {
-  arrayModals.forEach((modal) => {
-    modal.classList.remove(`show-modal`);
-  });
-  arrayMenu.forEach((modal) => {
-    modal.classList.remove(`show-modal`);
-  });
-  menuButtons.forEach((button) => {
-    button.classList.remove("mobile-menu-active");
-  });
-  body.classList.remove("oh");
-  showContryOrLang.forEach((e) => e.classList.remove("show-content"));
-  closeAllDetails();
-};
-
 document.addEventListener("click", (elem) => {
   if (elem.target.classList.value.includes("show-modal")) {
-    closeAll();
+    closeAll(arrayModals, arrayMenu, menuButtons, body, showContryOrLang);
   }
   if (elem.target.classList.value.includes("fourth-sectio-show-modal")) {
     modalWindowPriceBlur.classList.remove("fourth-sectio-show-modal");
@@ -141,7 +124,7 @@ document.addEventListener("click", (elem) => {
 
 allLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    closeAll();
+    closeAll(arrayModals, arrayMenu, menuButtons, body, showContryOrLang);
   });
 });
 
@@ -150,3 +133,4 @@ $(".slider").slick({
   dots: true,
   initialSlide: 1,
 });
+

@@ -6,12 +6,18 @@ export const closeAllDetails = () => {
 };
 
 //close all modal windows
-export const closeAll = (arrayModals,arrayMenu,menuButtons,body,showContryOrLang) => {
+export const closeAll = (
+  arrayModals,
+  arrayMenu,
+  menuButtons,
+  body,
+  showContryOrLang
+) => {
   arrayModals.forEach((modal) => {
-    modal.classList.remove(`show-modal`);
+    modal.classList.remove("show-modal");
   });
   arrayMenu.forEach((modal) => {
-    modal.classList.remove(`show-modal`);
+    modal.classList.remove("show-modal");
   });
   menuButtons.forEach((button) => {
     button.classList.remove("mobile-menu-active");
@@ -20,5 +26,4 @@ export const closeAll = (arrayModals,arrayMenu,menuButtons,body,showContryOrLang
   showContryOrLang.forEach((e) => e.classList.remove("show-content"));
   closeAllDetails();
 };
-
-console.log('test2');
+console.log("test2");

@@ -1,7 +1,9 @@
 import { closeAllDetails, closeAll } from "./functions.js";
-import '../style/style.css'
+import "../style/style.css";
+import "../style/style2.scss";
 console.log("test");
 
+let a;
 const arrayModals = [
   document.querySelector(".mobile-menu-modal-geo"),
   document.querySelector(".mobile-menu-modal-contact"),
@@ -32,7 +34,7 @@ btnPrice.addEventListener("click", () => {
   modalWindowPriceBlur.classList.add("fourth-sectio-show-modal");
   modalWindowPrice.classList.add("fourth-sectio-show-modal");
 });
-btnClose.addEventListener("click", (e) => {
+btnClose.addEventListener("click", () => {
   modalWindowPriceBlur.classList.remove("fourth-sectio-show-modal");
   modalWindowPrice.classList.remove("fourth-sectio-show-modal");
 });
@@ -55,24 +57,24 @@ menuButtons.forEach((elem) => {
     // open\close different modals
     arrayModals.forEach((e, i) => {
       if (i != elem.id) {
-        e.classList.remove(`show-modal`);
+        e.classList.remove("show-modal");
       }
     });
     arrayMenu.forEach((e, i) => {
       if (i != elem.id) {
-        e.classList.remove(`show-modal`);
+        e.classList.remove("show-modal");
       }
     });
 
-    arrayModals[elem.id].classList.toggle(`show-modal`);
+    arrayModals[elem.id].classList.toggle("show-modal");
 
     if (arrayModals[elem.id].classList.value.includes("show-modal")) {
-      arrayMenu[elem.id].classList.add(`show-modal`);
+      arrayMenu[elem.id].classList.add("show-modal");
     } else {
-      arrayMenu[elem.id].classList.remove(`show-modal`);
+      arrayMenu[elem.id].classList.remove("show-modal");
     }
 
-    if (arrayModals[elem.id].classList.value.includes(`show-modal`)) {
+    if (arrayModals[elem.id].classList.value.includes("show-modal")) {
       body.classList.add("oh");
     } else {
       body.classList.remove("oh");
@@ -133,4 +135,3 @@ $(".slider").slick({
   dots: true,
   initialSlide: 1,
 });
-

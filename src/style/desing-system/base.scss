@@ -1,4 +1,4 @@
-/* CSS reset */
+
 html,
 body {
   margin: 0;
@@ -64,13 +64,15 @@ button {
   background-color: #80808050;
 }
 
-.header-btn:hover,
-.btn-red:hover {
-  background: #911115;
-}
+.header-btn,
+.btn-red {
 
+  &:hover {
+    background: #911115;
+  }
+
+}
 
 ::-webkit-scrollbar {
   width: 0;
 }
-

@@ -1,7 +1,6 @@
 import { closeAllDetails, closeAll } from "./functions.js";
-import "../style/style.css";
-import "../style/style2.scss";
-console.log("test");
+import "../style/style.scss";
+import "../style/components/style.scss";
 
 let a;
 const arrayModals = [

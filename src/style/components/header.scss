@@ -51,16 +51,20 @@ header ul,
    padding: 30px 0;
 }
 
-.header-nav_list-item_link::after {
-   content: '';
-   width: 10px;
-   height: 10px;
-   border-top: 1px solid #000;
-   border-right: 1px solid #000;
-   position: absolute;
-   margin-left: 10px;
-   transform: rotate(135deg);
-   transition: all 0.3s ease;
+.header-nav_list-item_link {
+  
+   &::after{
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+      position: absolute;
+      margin-left: 10px;
+      transform: rotate(135deg);
+      transition: all 0.3s ease;
+   }
+
 }
 
 /* / hoover li */
@@ -372,7 +376,7 @@ header ul,
    padding: 30px 0;
    max-width: 350px;
    width: 100%;
-   
+
    overflow: auto;
    background-color: #fff;
    border-radius: 20px;

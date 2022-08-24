@@ -26,4 +26,3 @@ export const closeAll = (
   showContryOrLang.forEach((e) => e.classList.remove("show-content"));
   closeAllDetails();
 };
-console.log("test2");
